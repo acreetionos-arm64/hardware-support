@@ -1,0 +1,23 @@
+name: Infrastructure Issue - hardware-support
+description: Report hardware support infrastructure or tooling issues
+title: "[Infrastructure] hardware-support: "
+labels: ["infrastructure", "hardware-support"]
+assignees:
+  - macjunkins
+
+body:
+  - type: dropdown
+    id: infrastructure-category
+    attributes:
+      label: Infrastructure Category
+      options:
+        - Hardware Detection System
+        - Device Tree Compilation
+        - Driver Build System
+        - Firmware Management
+        - Hardware Validation Framework
+        - Cross-Platform Compatibility
+        - Performance Testing Tools
+        - Documentation System
+    validations:
+      required: true

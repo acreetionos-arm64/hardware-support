@@ -1,0 +1,50 @@
+name: Bug Report - hardware-support
+description: Report a hardware support issue
+title: "[Bug] hardware-support: "
+labels: ["bug", "hardware-support"]
+assignees:
+  - macjunkins
+
+body:
+  - type: dropdown
+    id: hardware-platform
+    attributes:
+      label: Hardware Platform
+      options:
+        - Raspberry Pi 4B
+        - Raspberry Pi 5
+        - Pine64 Plus
+        - Pinebook Pro
+        - Generic ARM64 Board
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: bug-category
+    attributes:
+      label: Issue Category
+      options:
+        - Hardware Not Detected
+        - GPU/Graphics Issue
+        - Audio System Problem
+        - Network Connectivity Issue
+        - Peripheral/GPIO Problem
+        - Performance Issue
+        - Device Tree Error
+        - Driver Loading Problem
+    validations:
+      required: true
+
+  - type: textarea
+    id: hardware-details
+    attributes:
+      label: Hardware Details
+      placeholder: |
+        Specific hardware information:
+        - Board revision/model
+        - Connected peripherals
+        - Storage type (SD card, eMMC, etc.)
+        - Power supply specifications
+    validations:
+      required: true

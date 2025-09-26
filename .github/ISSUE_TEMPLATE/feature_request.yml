@@ -1,0 +1,38 @@
+name: Feature Request - hardware-support
+description: Request new hardware platform support or hardware feature
+title: "[Feature] hardware-support: "
+labels: ["enhancement", "hardware-support"]
+assignees:
+  - macjunkins
+
+body:
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: Feature Category
+      options:
+        - New Hardware Platform Support
+        - Hardware Feature Enhancement
+        - Performance Optimization
+        - Driver Integration
+        - Device Tree Improvement
+        - Firmware Support
+        - Hardware Validation Tool
+        - Cross-Platform Feature
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target-hardware
+    attributes:
+      label: Target Hardware
+      options:
+        - Raspberry Pi (specify model in description)
+        - Pine64 (specify model in description)
+        - Rock Pi
+        - Orange Pi
+        - ODROID
+        - Generic ARM64 Server
+        - Other ARM64 SBC
+    validations:
+      required: true
